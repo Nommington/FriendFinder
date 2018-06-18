@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h2>
+                        THE GREAT WAR
+                    </h2>
+                    <p>
+                        It's 1914 and war has broken out in Europe!
+                    </p>
+                    <p>
+                        Does your country want in on the action?
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <form role="form">
+                            <div class="form-group">
+
+                                <label for="exampleInputEmail1">
+                                    Email address
+                                </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" />
+                            </div>
+                            <div class="form-group">
+
+                                <label for="exampleInputPassword1">
+                                    Password
+                                </label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" />
+                            </div>
+                            <div class="form-group">
+
+                                <label for="exampleInputFile">
+                                    File input
+                                </label>
+                                <input type="file" class="form-control-file" id="exampleInputFile" />
+                                <p class="help-block">
+                                    Example block-level help text here.
+                                </p>
+                            </div>
+                            <div class="checkbox">
+
+                                <label>
+                                    <input type="checkbox" /> Check me out
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <h3>
+                    <strong>Question 1</strong>
+                </h3>
+                <h4>How large is your country geographically?</h4>
+                <select class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Teeny tiny)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Like Russia or something)</option>
+                </select>
+
+                <h3>
+                    <strong>Question 2</strong>
+                </h3>
+                <h4>How large is your country's general population?</h4>
+                <select class="chosen-select" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Just a few families)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (A veritable sea of humanity)</option>
+                </select>
+
+
+                <h3>
+                    <strong>Question 3</strong>
+                </h3>
+                <h4>How many men will your country commit to the war effort?</h4>
+                <select class="chosen-select" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (A couple of guys who lift weights)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Legions and legions of soldiers)</option>
+                </select>
+
+
+                <h3>
+                    <strong>Question 4</strong>
+                </h3>
+                <h4>How much water does your country border?</h4>
+                <select class="chosen-select" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Landlocked)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Island nation)</option>
+                </select>
+
+
+                <h3>
+                    <strong>Question 5</strong>
+                </h3>
+                <h4>How large is your country's naval force?</h4>
+                <select class="chosen-select" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (What part of "landlocked" didn't you understand?</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (A fleet to rival the Royal Navy)</option>
+                </select>
+
+
+                <h3>
+                    <strong>Question 6</strong>
+                </h3>
+                <h4>How many total casualties will your country suffer?</h4>
+                <select class="chosen-select" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Be realistic.)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (This is realistic for The Great War)</option>
+                </select>
+
+
+                <h3>
+                    <strong>Question 7</strong>
+                </h3>
+                <h4>How much wealth will your country expend for the war effort?</h4>
+                <select class="chosen-select" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (A few bucks)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Like a James Cameron movie budget)</option>
+                </select>
+
+                <h3>
+                    <strong>Question 8</strong>
+                </h3>
+                <h4>On which front will your forces fight?</h4>
+                <select class="chosen-select" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Western)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (Both evenly)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Eastern)</option>
+                </select>
+
+                <h3>
+                    <strong>Question 9</strong>
+                </h3>
+                <h4>How long into the war will your country join?</h4>
+                <select class="chosen-select" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (The Archduke's dead? LET'S RUMBLE!)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (I wanna see how this plays out)</option>
+                </select>
+
+                <h3>
+                    <strong>Question 10</strong>
+                </h3>
+                <h4>How long after the war will your country remain a country?</h4>
+                <select class="chosen-select" id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Collapse before the armistice)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Still around today!)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function findMatch() {
+        var currentURL = window.location.origin;
+
+        $.ajax({url: currentURL + "/api/countries", method: "GET"})
+        .done(function(countriesData) {
+            console.log(countriesData);
+        })
+    }
+    findMatch();
+</script>
+
+</html>
