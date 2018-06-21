@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 
 </head>
@@ -65,9 +65,7 @@
                                     <input type="checkbox" /> Check me out
                                 </label>
                             </div>
-                            <button type="submit" class="btn btn-primary">
-                                Submit
-                            </button>
+
                         </form>
                     </div>
                     <div class="col-md-4">
@@ -131,35 +129,35 @@
                 <h3>
                     <strong>Question 5</strong>
                 </h3>
-                <h4>How large is your country's naval force?</h4>
+                <h4>How many military casualties will your country suffer?</h4>
                 <select class="chosen-select" id="q5">
                     <option value=""></option>
-                    <option value="1">1 (What part of "landlocked" didn't you understand?</option>
+                    <option value="1">1 (Too many)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (A fleet to rival the Royal Navy)</option>
+                    <option value="5">5 (Far, far too many)</option>
                 </select>
 
 
                 <h3>
                     <strong>Question 6</strong>
                 </h3>
-                <h4>How many total casualties will your country suffer?</h4>
+                <h4>How many total civilian casualties will your country suffer?</h4>
                 <select class="chosen-select" id="q6">
                     <option value=""></option>
-                    <option value="1">1 (Be realistic.)</option>
+                    <option value="1">1 (Far too many)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (This is realistic for The Great War)</option>
+                    <option value="5">5 (Unconscionable)</option>
                 </select>
 
 
                 <h3>
                     <strong>Question 7</strong>
                 </h3>
-                <h4>How much wealth will your country expend for the war effort?</h4>
+                <h4>How much will the war cost your country financially?</h4>
                 <select class="chosen-select" id="q7">
                     <option value=""></option>
                     <option value="1">1 (A few bucks)</option>
@@ -172,14 +170,14 @@
                 <h3>
                     <strong>Question 8</strong>
                 </h3>
-                <h4>On which front will your forces fight?</h4>
+                <h4>How much of the fighting will take place on your country's soil?</h4>
                 <select class="chosen-select" id="q8">
                     <option value=""></option>
-                    <option value="1">1 (Western)</option>
+                    <option value="1">1 (Virtually none)</option>
                     <option value="2">2</option>
-                    <option value="3">3 (Both evenly)</option>
+                    <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="5">5 (Eastern)</option>
+                    <option value="5">5 (Huge swaths are uninhabitable to this day)</option>
                 </select>
 
                 <h3>
@@ -208,17 +206,23 @@
                     <option value="5">5 (Still around today!)</option>
                 </select>
             </div>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary">
+                Submit
+            </button>
         </div>
     </div>
 </body>
 <script>
+
     function findMatch() {
         var currentURL = window.location.origin;
 
-        $.ajax({url: currentURL + "/api/countries", method: "GET"})
-        .done(function(countriesData) {
-            console.log(countriesData);
-        })
+        $.ajax({ url: currentURL + "/api/countries", method: "GET" })
+            .done(function (countriesData) {
+                console.log(countriesData);
+            })
     }
     findMatch();
 </script>
