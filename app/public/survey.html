@@ -46,7 +46,7 @@
                                 <label for="countryName">
                                     Please link to an image to represent your Country's flag.
                                 </label>
-                                <input type="text" class="form-control" id="countryName" />
+                                <input type="text" class="form-control" id="countryFlag" />
                             </div>
 
                         </form>
@@ -215,11 +215,13 @@
         </div>
     </div>
 </body>
-<script>
 
+<script type="text/javascript">
 
-    $("#submit").on("click"), function () {
+//$(document).ready(function() {
+    $("#submit").on("click", function(event) {
         event.preventDefault();
+        console.log("Button working!");
         function valid() {
             var isValid = true;
             $(".form-control").each(function () {
@@ -235,8 +237,8 @@
 
         if (valid() == true) {
             var myCountry = {
-                name: $("#name").val().trim(),
-                flag: $("#flag").val().trim(),
+                name: $("#countryName").val().trim(),
+                flag: $("#countryFlag").val().trim(),
                 scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
             };
             
@@ -247,8 +249,8 @@
             });
         }
         else alert("This is war. Please be thorough.")
-    }
-
+    });
+//});
 </script>
 
 </html>

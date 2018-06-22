@@ -1,4 +1,4 @@
-var countriesData = require("../data/friends.js");
+var countriesData = require("../data/friends");
 
 
 
@@ -13,8 +13,10 @@ module.exports = function (app) {
             flag: "",
             diff: 500
         };
-
-        var yourCountryScore = req.body.scores;
+        //console.log(req.body);
+        var yourCountry = req.body;
+        var yourCountryScore = yourCountry.scores;
+        console.log(yourCountryScore[0]);
         var scoreDiff = 0;
 
         for (i=0; i<countriesData.length; i++) {
