@@ -13,10 +13,10 @@ module.exports = function (app) {
             flag: "",
             diff: 500
         };
-        //console.log(req.body);
+        console.log(req.body.name);
         var yourCountry = req.body;
         var yourCountryScore = yourCountry.scores;
-        console.log(yourCountryScore[0]);
+        console.log(yourCountry);
         var scoreDiff = 0;
 
         for (i=0; i<countriesData.length; i++) {
