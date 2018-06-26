@@ -22,17 +22,19 @@ module.exports = function (app) {
         for (i=0; i<countriesData.length; i++) {
             var country = countriesData[i];
             scoreDiff = 0;
-
+            console.log("country: " + countriesData[i].name);
             for (j=0; j<country.scores.length; j++){
                 scoreDiff += Math.abs(parseInt(yourCountryScore[j]) - parseInt(country.scores[j]));
             }
-            if (scoreDiff >= bffCountry.diff) {
+            if (scoreDiff <= bffCountry.diff) {
+                console.log(bffCountry);
                 bffCountry.name = country.name;
                 bffCountry.flag = country.flag;
                 bffCountry.diff = scoreDiff;
             }
         }
         countriesData.push(req.body);
+        //console.log(bffCountry);
         res.json(bffCountry);
     });
 };
