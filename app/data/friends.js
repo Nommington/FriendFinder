@@ -1,7 +1,7 @@
 var countryArr = [
     {
         "name": "France",
-        "flag": "../../images/france.png",
+        "flag": "static/images/france.png",
         "scores": [
             2,
             2,
@@ -17,7 +17,7 @@ var countryArr = [
     },
     {
         "name": "Great Britain",
-        "flag": "../../images/uk.png",
+        "flag": "static/images/uk.png",
         "scores": [
             2,
             3,
@@ -33,7 +33,7 @@ var countryArr = [
     },
     {
         "name": "Russia",
-        "flag": "../../images/russia.png",
+        "flag": "static/images/russia.png",
         "scores": [
             5,
             5,
@@ -49,7 +49,7 @@ var countryArr = [
     },
     {
         "name": "Germany",
-        "flag": "../../images/germany.png",
+        "flag": "static/images/germany.png",
         "scores": [
             2,
             3,
@@ -65,7 +65,7 @@ var countryArr = [
     },
     {
         "name": "Austria-Hungary",
-        "flag": "../../images/austriahungary.png",
+        "flag": "static/images/austriahungary.png",
         "scores": [
             3,
             3,
@@ -81,7 +81,7 @@ var countryArr = [
     },
     {
         "name": "Ottoman Empire",
-        "flag": "../../images/ottoman.png",
+        "flag": "static/images/ottoman.png",
         "scores": [
             3,
             2,
@@ -97,7 +97,7 @@ var countryArr = [
     },
     {
         "name": "Bulgaria",
-        "flag": "../../images/bulgaria.png",
+        "flag": "static/images/bulgaria.png",
         "scores": [
             1,
             1,
@@ -113,7 +113,7 @@ var countryArr = [
     },
     {
         "name": "Serbia",
-        "flag": "../../images/serbia.png",
+        "flag": "static/images/serbia.png",
         "scores": [
             1,
             1,
@@ -129,7 +129,7 @@ var countryArr = [
     },
     {
         "name": "Belgium",
-        "flag": "../../images/belgium.png",
+        "flag": "static/images/belgium.png",
         "scores": [
             2,
             1,
@@ -145,7 +145,7 @@ var countryArr = [
     },
     {
         "name": "Italy",
-        "flag": "../../images/italy.png",
+        "flag": "static/images/italy.png",
         "scores": [
             3,
             2,
@@ -161,7 +161,7 @@ var countryArr = [
     },
     {
         "name": "Romania",
-        "flag": "../../images/romania.png",
+        "flag": "static/images/romania.png",
         "scores": [
             2,
             1,
@@ -177,7 +177,7 @@ var countryArr = [
     },
     {
         "name": "United States",
-        "flag": "../../images/us.png",
+        "flag": "static/images/us.png",
         "scores": [
             4,
             3,

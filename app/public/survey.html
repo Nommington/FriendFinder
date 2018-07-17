@@ -11,7 +11,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("static/images/map.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
 
+        #surveyCard {
+            background-color: skyblue;
+            padding: 10px;
+        }
+
+        #countryFlag {
+            height: 60px;
+            width: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,19 +50,20 @@
                         Does your country want in on the action?
                     </p>
                 </div>
+                <div class="col-md-4" id="surveyCard">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-4">
                         <form role="form">
                             <div class="form-group">
                                 <label for="countryName">
-                                    What is the name of your country?
+                                    <strong>What is the name of your country?</strong>
                                 </label>
                                 <input type="text" class="form-control" id="countryName" />
                             </div>
                             <div class="form-group">
 
                                 <label for="countryName">
-                                    Please link to an image to represent your Country's flag.
+                                    <strong>Please link to an image to represent your Country's flag.</strong>
                                 </label>
                                 <input type="text" class="form-control" id="countryFlag" />
                             </div>
@@ -218,8 +237,8 @@
 
 <script type="text/javascript">
 
-//$(document).ready(function() {
-    $("#submit").on("click", function(event) {
+    //$(document).ready(function() {
+    $("#submit").on("click", function (event) {
         event.preventDefault();
         console.log("Button working!");
         function valid() {
@@ -241,12 +260,13 @@
                 flag: $("#countryFlag").val().trim(),
                 scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
             };
-            
-            $.ajax({ url: "/api/countries",
-                    method: "POST",
-                    data: myCountry,
-                    traditional: true
-                     }).then(function(data) {
+
+            $.ajax({
+                url: "/api/countries",
+                method: "POST",
+                data: myCountry,
+                traditional: true
+            }).then(function (data) {
                 $("#country-name").text(data.name);
                 $("#country-flag").attr("src", data.flag);
                 $("#matchModal").modal("toggle");
